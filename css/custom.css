@@ -1,21 +1,16 @@
 .container {
     margin-top: 20px;
     position: relative;
-    transition: left 500ms
+    transition: left 500ms;
+    left: 0;
 }
 
 nav {
     margin: 35px 0 0 0;
-    text-align: center;
+    text-align: left;
 }
 
-/*#nav ul li {
-    display: inline;
-    margin: 0 20px 0 0;
-    margin-bottom: 0px;
-}*/
-
-nav a {
+nav > a {
     text-decoration: none;
     color: #FFF;
     display: block;
@@ -26,31 +21,25 @@ nav a {
     font-size: 16px;
     padding: .9em;
     font-family: Verdana,Arial,Helvetica,sans-serif;
-
 }
 
-.nav-submenu li {
-    list-style-type: none;
-    max-height: 90em;
-}
-
-.nav-submenu li a {
+.nav-submenu a {
     color: #FFF;
     display: block;
     width: 270px;
-    background: #F50000;
+    background: #800000;
     border-bottom: 1px solid rgba(0,0,0,.1);
     border-top: 1px solid rgba(255,255,255,.1);
     font-size: 16px;
     padding: .9em;
     font-family: Verdana,Arial,Helvetica,sans-serif;
-}
-/*nav li {
     max-height: 90em;
-}*/
+    margin-bottom: 0px;
+}
 
 nav a:link {
     text-decoration: none;
+    color: #ffffff;
 }
 
 nav a:visited {
@@ -59,15 +48,27 @@ nav a:visited {
 
 nav a:hover {
     text-decoration: underline;
+    color: #ffffff;
 }
 
-nav a:active {
-    text-decoration: underline;
+.nav-phone {
+    text-decoration: none;
+    text-align: center;
+    background: #800000;
+}
+
+.nav-phone:hover {
+    text-decoration: none;
+}
+
+.nav-social-share {
+    background: #800000;
+    max-height: 90em;
 }
 
 #mainImage img {
     margin-bottom: 30px;
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 .resize img {
@@ -88,9 +89,9 @@ nav a:active {
     color: inherit;
 }
 
-.nolink:hover h4 {
-    text-decoration: underline;
-}
+    .nolink:hover h4 {
+        text-decoration: underline;
+    }
 
 .center {
     text-align: center;
@@ -117,6 +118,5 @@ nav a:active {
 }
 
 .is-showing-nav {
-    left: 300px
+    left: 300px;
 }
-

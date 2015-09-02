@@ -7,6 +7,12 @@
     <title itemprop="name">Garage Door Installation, Service & Repair | Smarr Garage Door - Columbia MO</title>
     <meta itemprop="about" name="description" content="Servicing the Mid-Missouri area for over 35 years, Smarr Garage Door in Columbia, MO provides repair or installation of residential and commercial doors.">
     <meta itemprop="author" name="author" content="Smarr Garage Door">
+    <meta property="og:url" content="http://www.smarrdoors.com/your-page.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Smarr Garage Door" />
+    <meta property="og:description" content="Garage Door Installation, Service & Repair | Smarr Garage Door - Columbia MO" />
+    <meta property="og:image" content="http://www.smarrdoors.com/images/smarr2.png" />
+
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,23 +29,32 @@
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
     <script>
-        jQuery(document).on('ready', function() {
-            jQuery('[data-nav-toggle]').on('click', function(e) {
+        jQuery(document).on('ready', function () {
+            jQuery('[data-nav-toggle]').on('click', function (e) {
                 jQuery('[data-container]').toggleClass('is-showing-nav');
                 e.preventDefault();
             });
 
             jQuery('[data-nav]').accordion({
-                active: false, 
-                heightStyle: "content", 
-                collapsible: true,
-                icons: { "header": "ui-icon-triangle-1-e",
-                    "activeHeader": "ui-icon-triangle-1-s"}            
+                active: false,
+                heightStyle: "content",
+                header: "> [data-nav-submenu]",
+                collapsible: true
             });
         });
     </script>
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- Primary Page Layout -->
     <div class="container" data-container itemscope itemtype="http://schema.org/GeneralContractor">
         <header class="row">
@@ -51,26 +66,30 @@
             <div class="nine columns"></div>
         </header>
         <nav id="nav" data-nav class="main-nav">
+            <a class="nav-phone" href="tel:+15734422948">Call now! (573) 442-2948</a>
             <a href="/index.html">Home</a>
             <a href="/about.html">About</a>
-            <a href="/products.html">Residential Garage Doors</a>
-            <div>
-                <ul class="nav-submenu">
-                    <li><a href="/residential-garage-door/repair">Garage Door Repair</a></li>
-                    <li><a href="/residential-garage-door/openers">Garage Door Openers</a></li>
-                    <li><a href="/residential-garage-door/new">New Garage Doors</a></li>
-                </ul>
+            <a href="#" data-nav-submenu>Residential Garage Doors</a>
+            <div class="nav-submenu">
+                <a href="/residential-garage-door/repair">Garage Door Repair</a>
+                <a href="/residential-garage-door/openers">Garage Door Openers</a>
+                <a href="/residential-garage-door/new">New Garage Doors</a>
             </div>
-            <a href="/service.html">Commercial Garage Doors</a>
-            <div>
-                <ul class="nav-submenu">
-                    <li><a href="/commercial-garage-door/repair">Commercial Repairs</a></li>
-                    <li><a href="/commercial-garage-door/openers">Commerical Products & Services</a></li>
-                    <li><a href="/commercial-garage-door/bid">Request a Bid</a></li>
-                </ul>
+            <a href="#" data-nav-submenu>Commercial Garage Doors</a>
+            <div class="nav-submenu">
+                <a href="/commercial-garage-door/repair">Commercial Repairs</a>
+                <a href="/commercial-garage-door/openers">Commerical Products & Services</a>
+                <a href="/commercial-garage-door/bid">Request a Bid</a>
             </div>
             <!--<a href="/portfolio.html">Portfolio</a>-->
             <a href="/contact.html">Contact</a>
+            <div class=".nav-social-share">
+                <div class="fb-like" data-href="https://www.facebook.com/pages/Smarr-Garage-Door/1654083084847570" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                <a href="//plus.google.com/u/0/102283030367056796043?prsrc=3"
+                   rel="publisher" target="_top" style="text-decoration:none;">
+                    <img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;" />
+                </a>
+            </div>
         </nav>
 
         <div class="row center phone"><a class="nolink" href="tel:+15734422948">(573) 442-2948</a></div>
@@ -173,6 +192,6 @@
 
         ga('create', 'UA-62104536-1', 'auto');
         ga('send', 'pageview');
-
-        </body>
-            </html>
+    </script>
+</body>
+</html>
