@@ -51,6 +51,7 @@ nav a:link {
 
 nav a:visited {
     text-decoration: none;
+    color: #ffffff;
 }
 
 nav a:hover {
@@ -64,20 +65,62 @@ nav a:hover {
     background: #800000;
 }
 
-.nav-phone:hover {
+.nav-phone:hover, .header-phone:hover {
     text-decoration: none;
 }
-
-/*.nav-social-share {
-    background: #800000;
-    max-height: 90em;
-}*/
 
 .share-link {
     display: inline-block;
     vertical-align: middle;
     margin-right: 1em;
 }
+
+header {
+    height: 50px;
+    line-height: .9em;
+    border-bottom: 2px solid #800000;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 10;
+    padding-top: 20px;
+    background: #fff;
+}
+
+.header-phone {
+    padding: .9em;
+}
+
+header a:hover {
+    color:  #2B2A29;
+}
+
+header a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1em;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    color: #2B2A29;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.menu-icon {
+    width: 40px;
+}
+
+.content {
+    margin-top: 60px;
+}
+
+.logo {
+    width: 20%;
+}
+
+
+
+
 
 
 #mainImage img {
