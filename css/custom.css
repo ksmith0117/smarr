@@ -5,16 +5,22 @@
     left: 0;
 }
 
+.is-showing-nav {
+    left: 250px;
+}
+
 nav {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
     margin: 35px 0 0 0;
     text-align: left;
 }
 
 nav > a {
-    text-decoration: none;
-    color: #FFF;
     display: block;
-    width: 270px;
+    width: 220px;
     background: #A00;
     border-bottom: 1px solid rgba(0,0,0,.1);
     border-top: 1px solid rgba(255,255,255,.1);
@@ -26,7 +32,7 @@ nav > a {
 .nav-submenu a, .nav-social-share {
     color: #FFF;
     display: block;
-    width: 270px;
+    width: 220px;
     background: #800000;
     border-bottom: 1px solid rgba(0,0,0,.1);
     border-top: 1px solid rgba(255,255,255,.1);
@@ -167,13 +173,3 @@ header a {
     margin-bottom: 20px;
 }
 
-.main-nav {
-    position: absolute;
-    top: 0;
-    left: -300px;
-    width: 300px;
-}
-
-.is-showing-nav {
-    left: 300px;
-}
